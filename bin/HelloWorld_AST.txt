@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<JCompilationUnit line="3">
+  <Source fileName="../tests/pass/HelloWorld.java"/>
+  <Package name="pass"/>
+  <Imports>
+    <Import name="java.lang.System"/>
+  </Imports>
+  <TypeDeclarations>
+    <JClassDeclaration line="7" name="HelloWorld" super="java.lang.Object">
+      <Modifiers>
+        <Modifier name="public"/>
+      </Modifiers>
+      <ClassBlock>
+      <JMethodDeclaration line="9" name="message" returnType="String">
+        <Modifiers>
+          <Modifier name="public"/>
+          <Modifier name="static"/>
+        </Modifiers>
+        <FormalParameters>
+        </FormalParameters>
+        <Body>
+          <JBlock line="9">
+            <JReturnStatement line="10">
+              <JLiteralString line="10" type="" value="&quot;Hello, World!&quot;"/>
+            </JReturnStatement>
+          </JBlock>
+        </Body>
+      </JMethodDeclaration>
+      <JMethodDeclaration line="13" name="main" returnType="void">
+        <Modifiers>
+          <Modifier name="public"/>
+          <Modifier name="static"/>
+        </Modifiers>
+        <FormalParameters>
+          <JFormalParameter line="13" name="args" type="String[]"/>
+        </FormalParameters>
+        <Body>
+          <JBlock line="13">
+            <JStatementExpression line="14">
+              <JMessageExpression line="14" name="println">
+                <Arguments>
+                  <Argument>
+                    <JMessageExpression line="14" name="message">
+                      <Arguments>
+                      </Arguments>
+                    </JMessageExpression>
+                  </Argument>
+                </Arguments>
+              </JMessageExpression>
+            </JStatementExpression>
+          </JBlock>
+        </Body>
+      </JMethodDeclaration>
+      </ClassBlock>
+    </JClassDeclaration>
+  </TypeDeclarations>
+</JCompilationUnit>
